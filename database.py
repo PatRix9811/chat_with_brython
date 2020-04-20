@@ -32,4 +32,5 @@ def db_add_mesage(message, nick):
 
 
 def db_read_last_20_messages():
-	pass
+	last_20_messages = db_cursor.execute("SELECT (post_nick,post_content) FROM chat ORDER BY post_date DESC")
+	print(last_20_messages)
