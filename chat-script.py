@@ -3,6 +3,7 @@ from browser.session_storage import storage
 from browser.html import DIV
 import datetime
 
+
 if 'chat-nickname' not in storage.keys():
 	window.location.href = 'http://localhost/python_chat/'
 

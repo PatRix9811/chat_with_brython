@@ -1,4 +1,5 @@
 from websocket_server import WebsocketServer
+import database
 
 def on_message_recived(client, server, message):
 	nick = message[:message.find(',')]
